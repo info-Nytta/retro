@@ -1,0 +1,35 @@
+.galery-contener {
+	text-align: center;
+}
+.galery-item {
+	text-align: center;	
+	margin: 5px;	
+	padding-top: 20px;
+	width: 300px;
+	/*max-width: 45%;*/
+	display: inline-block;
+	background-color:inherit;
+	line-height:1em;
+}
+.galery-item div.galery-img {
+	padding:0;
+}
+.galery-item div.galery-img:hover {
+	background-color: inherit;
+}
+.galery-item div img {
+	width:80%;
+	padding: 10px;
+}
+.galery-item div img:hover {
+	color:gray;
+	padding: 0;
+	cursor: help;
+}
+a.galery-item-caption {
+	color: #eee;
+	display: block;
+}
+a.galery-item-caption:hover {
+	background-color: transparent;
+}

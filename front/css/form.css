@@ -1,0 +1,122 @@
+:root {
+	--color3: #f8b356;
+	--color4: #f1edbe;
+	--color5:	#493224; 
+}
+
+form {
+	max-width:500px; 
+	margin: 50px auto;
+}
+.icon {
+	max-height: 20px;
+	margin-right: 10px;
+	margin-bottom: -3px;
+}
+.icon:hover {
+	cursor: help;
+}
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+.galery-img span[data-title]:after {
+	bottom:100px;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #f8b356;
+    color: #111;
+    font-size: 150%;
+    position: absolute;
+    padding: 10px 15px;
+    bottom: 1em;
+    left: 30px;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+		border-radius: 10px;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
+label {
+	display: inline-block;
+	width: 150px;
+	padding: 5px 0;
+}
+label.radio {
+	width: 50px;
+	padding-left: 5px;
+}
+
+input {
+	padding:5px 2px;
+	margin:5px auto;
+	border-radius:5px;
+	border:3px var(--color4) ridge;
+	color: var(--color5);
+}
+input[type=number] {
+	width: 100px;
+	padding-left: 5px;
+}
+input[type=submit] {
+	display:block;
+	width: 100%;
+	background-color: var(--color4);
+	margin:10px auto;
+	border:3px var(--color4) outset;
+}
+input[type=submit]:hover {
+	background-color: var(--color3);
+}
+input[type=text] {
+	width:300px;
+}
+select {
+	width: 300px;
+	background-color: var(--color4);
+	border-radius:5px;
+	border:3px var(--color4) outset;
+	padding:5px 2px;
+	margin:5px auto;
+	color: var(--color5);
+}
+option:checked{
+	color:red;
+}
+input[type=radio] {
+	accent-color: var(--color3);
+	border:3px var(--color3) ridge;
+}
+
+input:focus { 
+	outline: none !important; 
+	border:3px var(--color3) ridge ;
+}
+select:focus, input[type=submit]:focus {
+	border:3px var(--color4) outset;
+}
+@media screen and (max-width: 600px) {
+	label {
+		display: block;
+		width: 100%;
+	}
+	input[type=radio], label.radio {
+		display: inline-block;
+		width: auto;
+		padding-right: 10px;
+	}
+	form {max-width:300px; margin: 50px auto;}
+	.icon {
+		display:none;
+	}
+	form div {
+		margin: 20px auto;
+	}
+}
