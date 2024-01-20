@@ -23,7 +23,7 @@ foreach ($lista as $elem) {
 ?>
 <br>
 Találatok száma: <?php echo count($talalat); ?>
-</p class="center">
+</p>
 </div>
 
 <?php if (count($talalat)>0) { ?>
